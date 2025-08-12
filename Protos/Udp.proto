@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "UdpMaster";
+
+
+message DataProto {
+    repeated string ips = 1;
+    bytes data = 2;
+}
+
+service UdpMasterService {
+    // stream return void
+    rpc SendData(stream DataProto) returns (stream DataProto);
+    rpc ClaimData(stream DataProto) returns (stream DataProto);
+}
