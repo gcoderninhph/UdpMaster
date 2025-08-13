@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UdpMaster")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df459bd06474f097c7b4fda371d1b834fff4373b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5916d526781d051ab3906279146cffa250fb0fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("UdpMaster")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UdpMaster")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
