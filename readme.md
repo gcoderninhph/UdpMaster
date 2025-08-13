@@ -8,3 +8,11 @@ dotnet add package Grpc.Tools
 // log
 dotnet add package Serilog.AspNetCore
 dotnet add package Serilog.Sinks.File
+
+- build docker
+```
+docker compose build
+docker compose up -d
+```
+
+==> remove : docker compose down
