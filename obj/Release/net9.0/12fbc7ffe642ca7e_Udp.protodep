@@ -1,2 +1,0 @@
-obj\Release\net9.0\Protos/Udp.cs \
-obj\Release\net9.0\Protos/UdpGrpc.cs: Protos/Udp.proto
