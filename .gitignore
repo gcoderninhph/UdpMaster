@@ -1,0 +1,33 @@
+# Build Folders
+bin/
+obj/
+logs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings folder
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+
+# Publish output
+publish/
+*.publish/
+
+# NuGet packages folder (if present locally)
+packages/
+
+# Others
+*.vspscc
+*.vssscc

@@ -33,3 +33,13 @@ D:\Ninh\C#\UdpMaster\obj\Debug\net9.0\refint\UdpMaster.dll
 D:\Ninh\C#\UdpMaster\obj\Debug\net9.0\UdpMaster.pdb
 D:\Ninh\C#\UdpMaster\obj\Debug\net9.0\UdpMaster.genruntimeconfig.cache
 D:\Ninh\C#\UdpMaster\obj\Debug\net9.0\ref\UdpMaster.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.AspNetCore.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+D:\Ninh\C#\UdpMaster\bin\Debug\net9.0\Serilog.Sinks.File.dll

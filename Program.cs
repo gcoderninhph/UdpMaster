@@ -24,22 +24,21 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 #endregion
 
-
+#region Cấu hình port
 // tạm bỏ qua tls
 builder.WebHost.ConfigureKestrel(options =>
 {
-    // Cổng cho gRPC
-    options.ListenLocalhost(5000, o =>
-    {
-        o.Protocols = HttpProtocols.Http2; // gRPC bắt buộc HTTP/2
-    });
-
-    // Cổng cho WebSocket
-    options.ListenLocalhost(5001, o =>
-    {
-        o.Protocols = HttpProtocols.Http1; // WebSocket cần HTTP/1.1
-    });
+    options.ListenAnyIP(5000, o => o.Protocols = HttpProtocols.Http2);
+    options.ListenAnyIP(5001, o => o.Protocols = HttpProtocols.Http1);
 });
+// builder.WebHost.ConfigureKestrel(options =>
+// {
+//     // Cổng cho gRPC
+//     options.ListenLocalhost(5000, o => o.Protocols = HttpProtocols.Http2);
+//     // Cổng cho WebSocket
+//     options.ListenLocalhost(5001, o => o.Protocols = HttpProtocols.Http1);
+// });
+#endregion
 
 builder.Services.AddGrpc();
 builder.Services.AddSingleton<IUdpSenderService, UdpSenderService>();
