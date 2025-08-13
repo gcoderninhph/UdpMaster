@@ -5,3 +5,6 @@ dotnet add package Grpc.AspNetCore
 dotnet add package Grpc.Net.Client
 dotnet add package Google.Protobuf
 dotnet add package Grpc.Tools
+// log
+dotnet add package Serilog.AspNetCore
+dotnet add package Serilog.Sinks.File

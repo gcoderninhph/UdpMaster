@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  grpc_websocket_app:
+    build: .
+    container_name: grpc_websocket_app
+    ports:
+      - "5000:5000" # gRPC
+      - "5001:5001" # WebSocket
+    environment:
+      - DOTNET_RUNNING_IN_CONTAINER=true
+      - DOTNET_USE_POLLING_FILE_WATCHER=true
+    volumes:
+      - ./appsettings.json:/app/appsettings.json:ro
+      - ./logs:/app/logs
+    restart: always

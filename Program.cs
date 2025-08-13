@@ -1,9 +1,29 @@
 using GrpcDemo.Services;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Serilog;
 using udp.master;
 using udp.node;
 
 var builder = WebApplication.CreateBuilder(args);
+
+#region Log
+// Lấy thư mục log từ config hoặc mặc định là "logs"
+var logDir = Path.Combine(AppContext.BaseDirectory, "logs");
+Directory.CreateDirectory(logDir);
+
+// Cấu hình Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File(
+        Path.Combine(logDir, "log-.txt"),
+        rollingInterval: RollingInterval.Hour, // Tự động chia file mỗi giờ
+        retainedFileCountLimit: 48, // Giữ tối đa 48 file (2 ngày nếu log theo giờ)
+        shared: true)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+#endregion
+
 
 // tạm bỏ qua tls
 builder.WebHost.ConfigureKestrel(options =>

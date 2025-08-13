@@ -1,0 +1,16 @@
+D:\app\UdpMaster.exe
+D:\app\appsettings.Development.json
+D:\app\appsettings.json
+D:\app\UdpMaster.dll
+D:\app\UdpMaster.runtimeconfig.json
+D:\app\UdpMaster.pdb
+D:\app\Google.Protobuf.dll
+D:\app\Grpc.AspNetCore.Server.dll
+D:\app\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\app\Grpc.Core.Api.dll
+D:\app\Grpc.Net.Client.dll
+D:\app\Grpc.Net.ClientFactory.dll
+D:\app\Grpc.Net.Common.dll
+D:\app\Microsoft.AspNetCore.OpenApi.dll
+D:\app\Microsoft.OpenApi.dll
+D:\app\UdpMaster.deps.json
