@@ -2,8 +2,8 @@ version: "3.9"
 
 services:
   grpc_websocket_app:
-    # build: .
-    image: ninhmphpl/udpmaster-grpc_websocket_app:1.0
+    build: .
+    image: ninhmphpl/udpmaster:2.0
     container_name: grpc_websocket_app
     ports:
       - "5000:5000" # gRPC

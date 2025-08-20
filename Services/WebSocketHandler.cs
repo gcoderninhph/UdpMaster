@@ -37,8 +37,8 @@ public class WebSocketHandler
                     break;
                 }
 
-                // Handle text messages only in this example
-                if (result.MessageType == WebSocketMessageType.Text)
+                // Handle binary messages only in this example
+                if (result.MessageType == WebSocketMessageType.Binary)
                 {
                     var count = result.Count;
                     // support fragmented messages

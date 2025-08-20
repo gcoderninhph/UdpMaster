@@ -66,6 +66,8 @@ namespace udp.master
 
         public async void ChunkData(DataProto data)
         {
+            // _logger.LogInformation($"Send {data.Data.Length} bytes to {data.Ips.Count} clients by {_clients.Count} Node.");
+
             if (_clients.Count == 0)
                 return;
 
