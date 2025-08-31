@@ -19,4 +19,5 @@ docker compose up -d
 
 
 // release docker
-docker tag udpmaster-grpc_websocket_app:latest ninhmphpl/udpmaster-grpc_websocket_app:1.0
+docker tag udpmaster-grpc_websocket_app:2.0 ninhmphpl/udpmaster-grpc_websocket_app:2.0
+docker push ninhmphpl/udpmaster:2.0
